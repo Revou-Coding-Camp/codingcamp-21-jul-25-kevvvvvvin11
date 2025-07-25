@@ -1,0 +1,160 @@
+body, input, button, h1, h2, h3, h4, h5, h6, ul, li {
+    font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #e0e7ff;
+}
+
+main {
+    width: 100%;
+    max-width: 700px; /* Increased from 400px */
+    padding: 0;
+}
+
+form, section, header, .action-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+    background: none;
+    box-sizing: border-box;
+}
+
+header {
+    padding-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    color: #222;
+}
+
+.added-tasks-box {
+    border: 1px solid #1e293b;
+    padding: 0;
+    margin-top: 0;
+    background: #1e40af;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 700px; /* Increased from 400px */
+    box-sizing: border-box;
+}
+
+.added-tasks-title {
+    color: #dbeafe;
+    margin: 0;
+    padding: 8px 0 0 0;
+}
+
+#added-tasks-list {
+    color: #dbeafe;
+    opacity: 1; /* Changed from 0.5 to 1 for full opacity */
+    margin: 0;
+    padding: 0 0 8px 0;
+}
+
+#added-tasks-list li {
+    display: grid;
+    grid-template-columns: 2fr 1fr auto auto;
+    align-items: center;
+    gap: 4px; /* Space between each box element */
+    padding: 2px 0;
+    opacity: 1;
+}
+
+.action-container {
+    flex-direction: row;
+    gap: 0;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+
+.add-btn, .filter-btn, .delete-btn {
+    padding: 6px 18px;
+    border-radius: 4px;
+    border: none;
+    margin: 0;
+    font-size: 16px;
+}
+
+.add-btn {
+    background: #3b82f6;
+    color: #fff;
+}
+
+.filter-btn {
+    background: #6b7280;
+    color: #fff;
+}
+
+.delete-btn {
+    background: #ef4444;
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    border-color: #0078d4;
+    outline: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 0;
+    padding: 2px 0;
+}
+
+#todo-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#todo-input,
+#date-input {
+    flex: 1 1 0;
+    margin: 0;
+    min-width: 0;
+}
+
+.add-btn {
+    margin-left: 0;
+}
