@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <!-- Title of the page -->
+        <header>
+            <h1>To-do List</h1>
+        </header>
+
+        <!-- Adding tasks -->
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Add a new task" required>
+            <input type="date" id="date-input" required>
+            <button type="submit" class="add-btn">+</button>
+        </form>
+
+        <!-- Task List -->
+        <section>
+            <div class="added-tasks-box">
+                <h4 class="added-tasks-title">Added Tasks</h4>
+                <ul id="added-tasks-list"></ul>
+            </div>
+        </section>
+
+        <!-- Filter + delete all tasks -->
+        <div class="action-container">
+            <button class="filter-btn">Filter by Date</button>
+            <button type="button" class="delete-btn" onclick="removeAllTask();">Delete All</button>
+        </div>
+    </main>
+
+    <!-- Javascript code -->
+    <script src="script.js"></script>
+</body>
+</html>
